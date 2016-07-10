@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.TextFlow?>
+<VBox prefHeight="250.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="10" fx:controller="pricepod.presenter.PricePodPresenter">
+    <padding>
+        <Insets bottom="10" top="10" right="10" left="10" />
+    </padding>
+    <children>
+        <AnchorPane fx:id="currencyPairComboBoxPanel">
+            <children>
+                <ComboBox fx:id="currencyPairComboBox" AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.topAnchor="0"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane>
+            <children>
+                <HBox AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.topAnchor="0" spacing="10" prefHeight="150" alignment="CENTER">
+                    <children>
+                        <TextFlow fx:id="sellPriceField" prefHeight="150.0" prefWidth="145.0" textAlignment="CENTER" />
+                        <TextFlow fx:id="buyPriceField" prefHeight="150.0" prefWidth="145.0" textAlignment="CENTER" />
+
+                        <!--<Button prefHeight="150" prefWidth="145" fx:id="sellPriceButton" text="SellPrice"/>-->
+                        <!--<Button prefHeight="150" prefWidth="145" fx:id="buyPriceButton" text="BuyPrice"/>-->
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane>
+            <children>
+                <HBox AnchorPane.rightAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.topAnchor="0" spacing="10" alignment="CENTER">
+                    <children>
+                        <Button fx:id="sellButton" text="Sell" prefWidth="70"/>
+                        <Spinner fx:id="quantitySpinner" prefWidth="140"/>
+                        <Button fx:id="buyButton" text="Buy" prefWidth="70"/>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

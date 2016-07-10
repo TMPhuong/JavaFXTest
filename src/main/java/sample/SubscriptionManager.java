@@ -1,6 +1,6 @@
 package sample;
 
 public interface SubscriptionManager {
-    void subscribe(String currencyPair);
-    void unsubsribe(String currencyPair);
+    void subscribe(String currencyPair, SubscriptionListener listener);
+    void unsubsribe(String currencyPair, SubscriptionListener listener);
 }
